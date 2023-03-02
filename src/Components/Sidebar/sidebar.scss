@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+}
+
+.parent-child {
+  display: flex;
+
+  .sidebar-container {
+    width: 17%;
+    height: 90vh;
+    border-right: 2px solid #88888833;
+    border-top: 2px solid #88888833;
+    background: #fbfbfc;
+
+    .project-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15%;
+
+      .project-data {
+        margin-left: 10px;
+        font-size: 1rem;
+
+        h4 {
+          color: rgb(28, 34, 66);
+        }
+
+        p {
+          color: rgba(128, 128, 128, 0.897);
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .side-links-container {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 15px;
+
+      .side-links {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 4px;
+        color: rgb(28, 34, 66);
+        text-decoration: none;
+        font-weight: 500;
+
+        li {
+          display: flex;
+          flex-direction: row;
+
+          .icon {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .side-links:hover {
+        background-color: #1256bb10;
+      }
+
+      .side-links:active {
+        background-color: #1256bb10;
+
+        li {
+          color: #3591dc;
+
+          .icon {
+            color: #3591dc;
+          }
+        }
+      }
+    }
+
+    hr {
+      opacity: 0.5;
+      margin: 20px 0;
+    }
+
+    .btn-end {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn {
+        all: unset;
+        background-color: #1256bb;
+        color: white;
+        border-radius: 3px;
+        font-weight: 600;
+        padding: 7px 12px;
+      }
+
+      .btn:hover {
+        transition: 0.2s ease-in-out;
+        background-color: #1963d1;
+      }
+    }
+
+    .footer {
+      display: flex;
+      color: rgb(128, 128, 128);
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  main{
+    width: 83%;
+    border: 2px solid red;
+  }
+}
